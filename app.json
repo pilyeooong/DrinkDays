@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DrinkDays",
-    "slug": "DrinkDays",
+    "name": "술마신날",
+    "slug": "drink-days",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,22 +9,46 @@
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#8B1E3F"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pilyeooong.drinkdays",
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false,
+        "googleMobileAdsAppId": "ca-app-pub-2370970221825852~7493979920"
+      },
+      "infoPlist": {
+        "GADApplicationIdentifier": "ca-app-pub-2370970221825852~7493979920",
+        "NSUserTrackingUsageDescription": "맞춤형 광고를 제공하기 위해 사용자의 활동 정보를 사용합니다. 허용하지 않아도 앱 사용에는 문제가 없습니다."
+      }
     },
     "android": {
+      "package": "com.pilyeooong.drinkdays",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "iosAppId": "ca-app-pub-2370970221825852~7493979920",
+          "androidAppId": "ca-app-pub-2370970221825852~7493979920"
+        }
+      ],
+      "expo-tracking-transparency"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
     }
   }
 }
