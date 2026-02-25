@@ -1,0 +1,215 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1771986280632,
+  "projectRoot": "/Users/heopil-yeong/Documents/pilyeooong-lab/DrinkDays",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.1.0",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run start",
+    "scripts": {
+      "start": "expo start",
+      "ios": "expo run:ios",
+      "android": "expo run:android",
+      "build:ios": "eas build --platform ios --profile production",
+      "build:ios:preview": "eas build --platform ios --profile preview",
+      "build:ios:dev": "eas build --platform ios --profile development",
+      "submit:ios": "eas submit --platform ios"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets",
+      "docs",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "android": {
+      "path": "android",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1771986280555,
+      "keyFiles": [
+        "build.gradle",
+        "gradle.properties",
+        "gradlew",
+        "gradlew.bat",
+        "settings.gradle"
+      ]
+    },
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 4,
+      "lastAccessed": 1771986280566,
+      "keyFiles": [
+        "adaptive-icon.png",
+        "favicon.png",
+        "icon.png",
+        "splash-icon.png"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1771986280566,
+      "keyFiles": [
+        "privacy-policy.html"
+      ]
+    },
+    "ios": {
+      "path": "ios",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1771986280567,
+      "keyFiles": [
+        "Podfile",
+        "Podfile.lock",
+        "Podfile.properties.json"
+      ]
+    },
+    "prototype": {
+      "path": "prototype",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1771986280568,
+      "keyFiles": [
+        "ATTRIBUTIONS.md",
+        "README.md",
+        "index.html",
+        "package.json",
+        "postcss.config.mjs"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1771986280568,
+      "keyFiles": []
+    },
+    "android/app": {
+      "path": "android/app",
+      "purpose": "Application code",
+      "fileCount": 3,
+      "lastAccessed": 1771986280569,
+      "keyFiles": [
+        "build.gradle",
+        "debug.keystore",
+        "proguard-rules.pro"
+      ]
+    },
+    "ios/app": {
+      "path": "ios/app",
+      "purpose": "Application code",
+      "fileCount": 6,
+      "lastAccessed": 1771986280569,
+      "keyFiles": [
+        "AppDelegate.swift",
+        "Info.plist",
+        "PrivacyInfo.xcprivacy"
+      ]
+    },
+    "prototype/src": {
+      "path": "prototype/src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1771986280569,
+      "keyFiles": [
+        "main.tsx"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 5,
+      "lastAccessed": 1771986280570,
+      "keyFiles": [
+        "AdBanner.tsx",
+        "Calendar.tsx",
+        "RecordForm.tsx"
+      ]
+    },
+    "src/services": {
+      "path": "src/services",
+      "purpose": "Business logic services",
+      "fileCount": 2,
+      "lastAccessed": 1771986280570,
+      "keyFiles": [
+        "ads.ts",
+        "storage.ts"
+      ]
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1771986280570,
+      "keyFiles": [
+        "drink.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "App.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1771986696537,
+      "type": "file"
+    },
+    {
+      "path": "src/services/ads.ts",
+      "accessCount": 1,
+      "lastAccessed": 1771986663664,
+      "type": "file"
+    },
+    {
+      "path": "app.json",
+      "accessCount": 1,
+      "lastAccessed": 1771987061183,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

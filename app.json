@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.pilyeooong.drinkdays",
-      "buildNumber": "1",
+      "buildNumber": "7",
       "config": {
         "usesNonExemptEncryption": false,
         "googleMobileAdsAppId": "ca-app-pub-2370970221825852~7493979920"
@@ -40,14 +40,20 @@
         "react-native-google-mobile-ads",
         {
           "iosAppId": "ca-app-pub-2370970221825852~7493979920",
-          "androidAppId": "ca-app-pub-2370970221825852~7493979920"
+          "androidAppId": "ca-app-pub-2370970221825852~7493979920",
+          "delay_app_measurement_init": true
         }
       ],
-      "expo-tracking-transparency"
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "맞춤형 광고를 제공하기 위해 사용자의 활동 정보를 사용합니다. 허용하지 않아도 앱 사용에는 문제가 없습니다."
+        }
+      ]
     ],
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "836d3e7f-a35b-4c2a-8c18-31f3ed596bfa"
       }
     }
   }

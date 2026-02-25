@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZE, BORDER_RADIUS, SPACING } from '../constants/theme';
+import { isTrackingGranted, isAdsInitialized } from '../services/ads';
 
 let BannerAdComponent: React.ComponentType<any> | null = null;
 let BannerAdSizeValue: string | null = null;
@@ -22,6 +23,12 @@ interface AdBannerProps {
 
 export function AdBanner({ unitId }: AdBannerProps) {
   const [adError, setAdError] = useState<string | null>(null);
+
+  // AdMob SDK가 초기화되기 전에는 광고를 렌더링하지 않음
+  // ATT 권한 처리가 완료된 후에만 광고 요청
+  if (!isAdsInitialized()) {
+    return null;
+  }
 
   if (!BannerAdComponent || !BannerAdSizeValue) {
     if (!__DEV__) return null;
@@ -51,7 +58,7 @@ export function AdBanner({ unitId }: AdBannerProps) {
     <BannerAdComponent
       unitId={unitId}
       size={BannerAdSizeValue}
-      requestOptions={{ requestNonPersonalizedAdsOnly: true }}
+      requestOptions={{ requestNonPersonalizedAdsOnly: !isTrackingGranted() }}
       onAdLoaded={() => {
         console.log('[AdBanner] Ad loaded successfully');
       }}
