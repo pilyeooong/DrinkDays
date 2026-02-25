@@ -193,10 +193,22 @@
   },
   "hotPaths": [
     {
+      "path": "ios/app/Info.plist",
+      "accessCount": 3,
+      "lastAccessed": 1771988257351,
+      "type": "directory"
+    },
+    {
       "path": "App.tsx",
       "accessCount": 2,
       "lastAccessed": 1771986696537,
       "type": "file"
+    },
+    {
+      "path": "ios",
+      "accessCount": 2,
+      "lastAccessed": 1771988313432,
+      "type": "directory"
     },
     {
       "path": "src/services/ads.ts",
