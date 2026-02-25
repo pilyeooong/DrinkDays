@@ -194,8 +194,8 @@
   "hotPaths": [
     {
       "path": "ios/app/Info.plist",
-      "accessCount": 3,
-      "lastAccessed": 1771988257351,
+      "accessCount": 4,
+      "lastAccessed": 1771988345211,
       "type": "directory"
     },
     {
@@ -211,15 +211,15 @@
       "type": "directory"
     },
     {
-      "path": "src/services/ads.ts",
-      "accessCount": 1,
-      "lastAccessed": 1771986663664,
+      "path": "app.json",
+      "accessCount": 2,
+      "lastAccessed": 1771988340404,
       "type": "file"
     },
     {
-      "path": "app.json",
+      "path": "src/services/ads.ts",
       "accessCount": 1,
-      "lastAccessed": 1771987061183,
+      "lastAccessed": 1771986663664,
       "type": "file"
     }
   ],
